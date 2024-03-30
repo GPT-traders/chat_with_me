@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "chat-with-me"
+version = "0.1.0"
+description = ""
+authors = ["GPT-traders <crispin.nandhu@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10,<3.12"
+qdrant-client = "^1.8.0"
+llama-index-vector-stores-qdrant = "^0.1.4"
+llama-index-embeddings-huggingface = "^0.1.4"
+llama-index = "^0.10.25"
+llama-index-readers-file = "^0.1.13"
+python-dotenv = "^1.0.1"
+uvicorn = "^0.29.0"
+fastapi = "^0.110.0"
+loguru = "^0.7.2"
+pydantic-settings = "^2.2.1"
+python-multipart = "^0.0.9"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
